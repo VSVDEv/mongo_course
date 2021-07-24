@@ -197,12 +197,20 @@ Each ticket will contain the command to run that ticket's specific unit tests.
 When running the Unit Tests or the Application from the shell, make sure that
 you are in the same directory as the ``pom.xml`` file.
 
-## Mongo register and create cluster
+=========================================
+Mongo register and create cluster
+====================================
 
 mongodb+srv://user:pass@host/db?retryWrites=true
+
 go to mongo -> try free->auth->project"mflix"->create cluster"mflix" ====freee
+
 Load simple data
+
 Connect: 
+
 IP 0.0.0.0/0  for acess  or specify your current IP
+
 username and password
+
 -> chose connection method -> mongo compass
