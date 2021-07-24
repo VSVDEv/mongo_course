@@ -1,0 +1,86 @@
+
+Which of the following class names are part of the basic MongoDB Java driver objects ?
+MongoClient
+MongoCollection
+Document
+
+
+What utility does the MongoClients class provide?
+A builder method to generate a MongoClient instance.
+
+Query Builders
+You can combine Filters to compose robust queries.
+Projections offers a convenience method, excludeId(), to remove the _id field in a projection.
+
+Basic Reads
+We must explicitly remove the _id field in a projection if we do not want to include this field.
+Field projection is not performed in the MongoDB Java Driver find method.
+
+
+Imagine you have a date field in the Document that contains a Date data type in it and a Java Object where the date property is a String type. How would you read this Document into the Java Object while gaining the ability to also write to the Document form the Java Object.
+Using a POJO in conjunction with a Custom Codec
+Using a POJO with a Default Codec and a custom field type conversion script
+
+Which of the following classes can be used to compose aggregation pipeline stages and expressions ?
+com.mongodb.client.model.Aggregates
+com.mongodb.client.model.Accumulators
+com.mongodb.client.model.Filters
+
+What is true about the Document Object inserted into a collection using the insertOne method?
+It contains the _id of an inserted document even if the Document did not have an _id value prior to insertion.
+
+
+Which of the following Write Concerns are valid in a 3-node replica set?
+w: 0
+w: 1
+w: majority
+
+
+
+For this ticket, you'll be required to increase the durability of the addUser method. Unless you have already changed this method to do so, it should be using the default write concern of w: 1.
+When a new user registers for MFlix, their information must be added to the database before they can do anything else. For this reason, we want to make sure that the data written by the addUser method will not be rolled back.
+We can decrease the chances of a rollback by increasing the write durability of the addUser method.
+Which of the following write concerns are more durable than the default?
+WriteConcern.MAJORITY
+WriteConcern.W2
+
+
+When changing a field value in a single document it is best to use
+updateOne
+
+
+Why did we use a let expression with expressive $lookup, when joining the comments and the movies collection?
+To use fields from the movies documents in the pipeline.
+
+Which of the following is true about deleting documents using the MongoDB Java Driver?
+deleteMany can delete any number of documents.
+DeleteResult objects contain the number of deleted documents.
+deleteOne can only delete one document.
+
+
+Which of the following Read Concerns are valid in a 3-node replica set?
+"majority"
+"local"
+
+
+Which of the following is true about bulk writes?
+By default, bulk writes are ordered.
+Bulk writes decrease the effect of latency on overall operation time.
+
+
+
+Which of the following are benefits of connection pooling?
+New operations can be serviced with pre-existing connections, so a new connection doesn't have to be created each time.
+A large influx of operations can be handled more quickly with a pool of existing connections.
+
+When should you set a wtimeout?
+When our application is using a Write Concern more durable than w: 1.
+
+Given a replica set with 5 nodes which write concern will cause an error when writing?
+7
+
+What of the following is true about Change Streams?
+
+They output cursors, which contain change event documents.
+They can be used to log changes to a MongoDB collection.
+They accept pipelines, which can be used to filter output from the change stream.
